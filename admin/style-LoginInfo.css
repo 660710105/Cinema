@@ -1,0 +1,23 @@
+.btn-logout {
+    font-weight: 500;
+    padding: 8px 20px;
+    background: transparent;
+    color: #fff;
+    border-radius: 5px;
+    border: 2px solid #fff;
+    transition: 0.2s;
+}
+.btn-logout:hover {
+    background-color: #fff;
+    color: #010101;
+    transition: 0.2s;
+}
+.user-info{
+    font-size: 1.2em;
+    font-weight:  500;
+    color:#fff;
+    margin-left: 35px;
+    padding: 8px 5px;
+    display:  inline-block;
+    position: relative;
+}
