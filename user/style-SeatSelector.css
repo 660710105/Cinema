@@ -1,0 +1,59 @@
+#bookContainer{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    top: 20%;
+    left: 40%;
+    position: sticky;
+}
+
+#bookBoard {
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(8, 50px);
+    grid-template-rows: repeat(8, 50px);
+    grid-gap: 10px;
+}
+
+#book{
+    width: 200px;
+    background-color: #fff;
+    margin: 20px;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 3px;
+    font-size: 1.2em;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    color: #121212;
+    transition: transform 0.3s ease;
+}
+
+.seat {
+    background-color: #fff;
+    cursor: pointer;
+    border-radius: 8px; 
+    font-size: 1.2em; 
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    color: #333; 
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05); 
+    border: 1px solid #ddd;
+}
+
+.seat.booked {
+    background-color: #ff4d4d;
+}
+
+.seat.selected {
+    background-color: #5cb8ff;
+}
+
+#book:hover, .seat:hover {
+    transform: scale(1.05);
+    box-shadow: 0 3px 7px rgba(0, 0, 0, 0.15);
+}
